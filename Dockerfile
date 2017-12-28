@@ -35,8 +35,7 @@ COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 
 RUN chmod -R a+rw $HOME && \
     chmod -R +x $STI_SCRIPTS_PATH && \
-    chmod -R g+rw /opt/s2i/destination \
-    chown -R 1001:1001 $APP_ROOT
+    chmod -R g+rw /opt/s2i/destination
 
 USER 1001
 
