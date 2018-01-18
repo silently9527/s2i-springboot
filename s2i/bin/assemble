@@ -45,6 +45,6 @@ else
     mvn -Dmaven.test.skip=true package
 fi
 
-mv ./target/*.jar $APP_ROOT/app.jar
+mv ./target/*.jar $APP_ROOT/
 mvn clean
 
