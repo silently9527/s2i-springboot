@@ -31,17 +31,14 @@ oc edit is/springboot-s2i -n openshift
 ```$yaml
 tags:
     - annotations:
-        description: >-
-                  Build and run Springboot applications on CentOS 7. For more information
-                  about using this builder image, including OpenShift considerations,
-                  see https://github.com/silentwu/s2i-springboot.git.
+        description: 'Build and run Springboot applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/silentwu/s2i-springboot.git.'
         iconClass: icon-wildfly
         openshift.io/display-name: SpringBoot
         openshift.io/provider-display-name: 'Rabbit blog, http://blog.xianshiyue.com'
         sampleRepo: 'https://gitee.com/silentwu/openshift-springboot.git'
         supports: 'springboot,jee,java'
         tags: 'builder,springboot,java'
-        version: 1.0
+        version: '1.0'
 ```
 
 
