@@ -37,6 +37,8 @@ RUN chmod -R a+rw $HOME && \
     chmod -R +x $STI_SCRIPTS_PATH && \
     chmod -R g+rw /opt/s2i/destination
 
+RUN echo "root:root" | chpasswd
+
 USER 1001
 
 CMD $STI_SCRIPTS_PATH/usage
